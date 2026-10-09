@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111c">
+  <title>Lumora Market Signal</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="brand">
+      <div class="logo">L</div>
+      <div><h1>LUMORA</h1><p>MARKET SIGNAL</p></div>
+    </header>
+
+    <section class="market">
+      <div class="symbol">XAUUSD <span>•</span> 1 MINUTE</div>
+      <div id="statusCard" class="status waiting">
+        <div id="statusIcon" class="status-icon">…</div>
+        <h2 id="statusTitle">WAIT</h2>
+        <p id="statusText">Waiting for market data from MT5</p>
+      </div>
+      <div class="details">
+        <div><span>Market</span><strong id="marketName">XAUUSD</strong></div>
+        <div><span>Timeframe</span><strong>M1</strong></div>
+        <div><span>Last update</span><strong id="lastUpdate">—</strong></div>
+      </div>
+      <p id="connection" class="connection">Connecting to market data…</p>
+    </section>
+
+    <footer>
+      <p>Signal is informational only. Confirm the market condition in MT5 before enabling your bot.</p>
+      <p class="muted">Refreshes automatically every 5 seconds.</p>
+    </footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
