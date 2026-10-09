@@ -1,0 +1,26 @@
+{
+  "id": "/",
+  "name": "Lumora Market Signal",
+  "short_name": "Lumora",
+  "description": "XAUUSD M1 market-condition signal dashboard",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#07111c",
+  "theme_color": "#07111c",
+  "icons": [
+    {
+      "src": "/icons/lumora-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/lumora-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

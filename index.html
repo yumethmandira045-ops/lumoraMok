@@ -1,16 +1,25 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07111c"><title>Lumora Market Signal</title>
-  <link rel="icon" type="image/png" href="/lumora-logo.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07111c">
+  <meta name="description" content="Lumora XAUUSD M1 market-condition signal dashboard.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Lumora">
+  <title>Lumora Market Signal</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="/icons/lumora-192.png">
+  <link rel="apple-touch-icon" href="/icons/lumora-192.png">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <main class="wrap">
     <header class="brand"><img class="brand-logo" src="/lumora-logo.png" alt="Lumora Market Signal logo"></header>
-    <section class="market">
-      <div class="symbol">XAUUSD <span>•</span> 1 MINUTE</div>
+    <section class="market" aria-live="polite">
+      <div class="topline"><div class="symbol">XAUUSD <span>•</span> 1 MINUTE</div><button id="installButton" class="install-button" hidden>Install App</button></div>
       <div id="statusCard" class="status waiting">
         <div id="statusIcon" class="status-icon">…</div>
         <h2 id="statusTitle">WAIT</h2>
@@ -21,9 +30,10 @@
         <div><span>Timeframe</span><strong>M1</strong></div>
         <div><span>Last update</span><strong id="lastUpdate">—</strong></div>
       </div>
+      <div class="filter-note"><strong>Signal checks</strong><span>Closed candles · trend strength · EMA alignment · chop/late-entry filter</span></div>
       <p id="connection" class="connection">Connecting…</p>
     </section>
-    <footer><p>This is a market-condition alert, not a guarantee of profit. Confirm conditions in MT5 before enabling a trading bot.</p><p class="muted">Updates every 5 seconds.</p></footer>
+    <footer><p>Market-condition alert only — not a profit guarantee or automatic trade command. Verify in MT5 before enabling a trading bot.</p><p class="muted">Refreshes every 5 seconds · Install this page from your browser menu on Android/iPhone.</p></footer>
   </main>
   <script src="/app.js"></script>
 </body></html>
